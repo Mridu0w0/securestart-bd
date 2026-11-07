@@ -4,7 +4,6 @@ Free security starter kit for small development teams in Bangladesh. It gives de
 
 - **Live demo:** {{[vercel url](https://securestart-bd.vercel.app/)}}
 
-![SecureStart BD landing page](./public/Screenshot.PNG)
 
 ## The problem
 
