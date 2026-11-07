@@ -2,11 +2,9 @@
 
 Free security starter kit for small development teams in Bangladesh. It gives developers copy ready secure code templates, a security checklist with a score, and a fake link checker.
 
-- **Live demo:** {{vercel url}}
-- **Demo video:** {{video url}}
-- **Track:** Frontend Engineer Intern, Phase 02 (From Idea to Demo)
+- **Live demo:** {{[vercel url](https://securestart-bd.vercel.app/)}}
 
-![SecureStart BD landing page](./public/screenshot.png)
+![SecureStart BD landing page](./public/Screenshot.PNG)
 
 ## The problem
 
