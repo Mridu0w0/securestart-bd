@@ -2,6 +2,7 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Background from "@/components/Background";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geist.variable} ${geistMono.variable} flex min-h-screen flex-col`}
       >
+        <Background />
         <a
           href="#main"
           className="sr-only fixed left-4 top-4 z-[60] rounded-lg bg-white px-3 py-2 caption-1 focus:not-sr-only focus:outline-2 focus:outline-emerald-700"

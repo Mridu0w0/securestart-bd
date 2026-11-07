@@ -43,3 +43,25 @@ p, li, summary { text-wrap: pretty; }
 @utility card {
   @apply rounded-2xl border border-neutral-200 bg-white;
 }
+
+/* Ambient background motion: transform only, slow and subtle */
+@keyframes drift-a {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(8vw, 6vh, 0) scale(1.15); }
+}
+@keyframes drift-b {
+  from { transform: translate3d(0, 0, 0) scale(1.1); }
+  to   { transform: translate3d(-10vw, 8vh, 0) scale(0.95); }
+}
+@keyframes drift-c {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(6vw, -8vh, 0) scale(1.2); }
+}
+
+.drift-a { animation: drift-a 28s ease-in-out infinite alternate; will-change: transform; }
+.drift-b { animation: drift-b 34s ease-in-out infinite alternate; will-change: transform; }
+.drift-c { animation: drift-c 40s ease-in-out infinite alternate; will-change: transform; }
+
+@media (prefers-reduced-motion: reduce) {
+  .drift-a, .drift-b, .drift-c { animation: none; }
+}

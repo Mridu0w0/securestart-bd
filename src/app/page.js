@@ -128,7 +128,7 @@ const faqSchema = {
 function Section({ tone = "white", children }) {
   return (
     <section
-      className={`px-4 py-20 ${tone === "soft" ? "bg-neutral-50" : "bg-white"}`}
+      className={`px-4 py-20 ${tone === "soft" ? "bg-neutral-50/60" : ""}`}
     >
       <div className="mx-auto max-w-6xl">{children}</div>
     </section>
@@ -256,7 +256,7 @@ export default function Home() {
       </Section>
 
       {/* 4. Tagline reveal */}
-      <section className="bg-white px-4 py-24">
+      <section className="px-4 py-24">
         <div className="mx-auto max-w-6xl">
           <TaglineReveal text="Good security should not depend on your budget. Every small team deserves a safe place to start." />
         </div>
